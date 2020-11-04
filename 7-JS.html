@@ -82,13 +82,17 @@
 
         let {items: array} = folders;
 
-        let [arrObj0, arrObj1, arrObj2, arrObj3, arrObj4] = array;
+        let [ , , {items: arrInner}, , ] = array;
+
+        let [{items: arrSmall}] = arrInner;
+
+        // let [arrObj0, arrObj1, arrObj2, arrObj3, arrObj4] = array;
     
-        let {name, type, items: arrInner} = arrObj2;  
+        // let {name, type, items: arrInner} = arrObj2;  
       
-        let [arrInnerObj] = arrInner;  
+        // let [arrInnerObj] = arrInner;  
     
-        let {arrInnerObj_name, arrInnerObj_type, items: arrSmall} = arrInnerObj;
+        // let {arrInnerObj_name, arrInnerObj_type, items: arrSmall} = arrInnerObj;
 
 
         document.addEventListener('keydown', () => {
